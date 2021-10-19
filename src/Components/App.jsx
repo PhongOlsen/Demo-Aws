@@ -3,7 +3,7 @@ import "../SCSS/App.scss";
 import Note from "./Note";
 
 const App = () => {
-  const [isEditing, setEditing] = useState(false);
+  const [isEditing] = useState(false);
   const inputRef = useRef();
   const [inputValue, setInputValue] = useState("");
   const [notes, setNotes] = useState([]);
@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <>
-      <div className="header">React Hooks - TODO List Tutorial</div>
+      <div className="header">React Hooks - TODO List Tutorial Hanh Nguyen</div>
       <div className="container">
         <div className="btn" onClick={addTask}>
           +
